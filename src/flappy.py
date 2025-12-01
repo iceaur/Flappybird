@@ -133,3 +133,9 @@ class Flappy:
             self.config.tick()
             pygame.display.update()
             await asyncio.sleep(0)
+
+if __name__ == "__main__":
+    import asyncio
+    game = Flappy()
+    asyncio.run(game.start())
+
